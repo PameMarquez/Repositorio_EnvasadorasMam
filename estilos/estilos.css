@@ -276,6 +276,9 @@ section .Productos img{
     color: #1775BD;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    padding: 5px 5px;
+    margin: auto;
 }
 
 
@@ -294,12 +297,17 @@ section .Productos img{
 .main-EnvasadoAlVacio-queEs, .main-EnvasadoAlVacio-beneficios{
     background-color: white;
     color: #404040;
+    border-color: #1775BD;
+    border-style: solid;
+    text-align: center;
 }
 
 
 .servicios{
     background-color: #A6A6A6;
     padding: 0;
+    text-align: center;
+    padding: 5px 5px;
 }
 
 .servicios p, .servicios h3, .servicios h2{
