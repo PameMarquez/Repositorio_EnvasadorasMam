@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: grid;
+    grid-template-areas:
+     "header header header"
+     "main main main"
+     "footer footer footer";
+    grid-template-columns: 100px auto 100px;
+}
+
+header {
+   grid-area: header;
+}
+
+footer {
+   grid-area: footer;
+}
+
+main {
+   grid-area: main;     
+}
+
+body{
+    background-color: #D9D9D9;
+}
+
+p{
+    color: #404040;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0px 50px;
+    padding: 20px 50px;
+}
+
+.inicio-titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #404040;
+    letter-spacing: normal;
+    background-size: 0%;
+    height: 0%;
+    
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #404040;
+    letter-spacing: normal;
+    margin: 0px 50px;
+    padding: 20% 100px;
+    
+}
+
+h4, h5{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: normal;
+    margin: 0px 50px;
+    padding: 20px 50px;
+}
+
+h2, h3{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: normal;
+    margin: 0px 50px;
+    padding: 20px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #404040;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h5{
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 2px;
+    border-color: dodgerblue;
+    color: black;
+}
+
+
+/*inicia nav */
+nav, .navbar{
+	padding: 10px 40px 10px 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    background-color: none;
+}
+
+	nav ul li{
+			list-style: none;
+			display: inline-block;
+			margin: 0 10px;
+            padding: 0% 20%;
+            justify-content: flex-end;
+		}
+
+			nav ul li a{
+				color:white;
+				text-transform: uppercase;
+				text-decoration: none;
+			/*Subrayado animado*/
+			  	background-image: linear-gradient(currentColor, currentColor);
+   				background-position: 0% 100%;
+    			background-repeat: no-repeat;
+    			background-size: 0% 2px;
+    			transition: background-size .3s;
+			}
+
+			a:hover, a:focus {
+    			background-size: 100% 2px;
+			}
+
+/*cierra nav */
+
+ul{
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+    font-size: 12px;
+    margin: 0px 30px;
+    padding: 10px 50px;
+}
+
+/*
+header{
+    background-color: #404040;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+*/
+
+main, footer{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+}
+
+
+
+form{
+    margin: 20px;
+    padding: 0px 100px;
+    background-color: #2C5370;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input::placeholder{
+    color: #404040;
+}
+
+input, textarea, label, .row{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: normal;
+    color: #D9D9D9;
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+option, select{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: normal;
+    color: #404040;
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+button{
+    color: #404040;
+    border-color: #2C5370;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #D9D9D9;
+    letter-spacing: normal;
+    color: #404040;
+    width: 30%;
+    padding: 12px 12px;
+    margin-left: 35%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+section .Productos img{
+    width: 15%;
+}
+
+.header-logo{
+    margin: 5px 10px;
+    padding: 5px 10px;  
+}
+
+.header-logo, ul{
+    display: inline;
+}
+
+.carousel-inner img{
+        width: 100%;
+}
+
+.li-beneficios li{
+    color: #404040;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0px 50px;
+    padding: 5px 50px;
+}
+
+.main-envasado{
+    display: flex;
+    flex-direction: column;
+    justify-items: normal;
+}
+
+#productos img{
+    margin: 0px 50px;
+    padding: 20px 100px;
+    width: 60%;
+}
+
+
+.Servicios{
+    background-image: url(../img/pexels-pixabay-257736.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.Servicios p{
+    color: black;
+    text-justify: auto;
+    font-weight: bold;
+}
+.Servicios-grid{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 300px 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50px;
+    padding: 20px 100px; 
+}
+
+.boton a{
+    text-decoration: none;
+    background-color: #D9D9D9;
+    border-color: #1775BD;
+    color: #404040;
+    padding: 5px 5px;
+    border-style: solid;
+}
+
+.Productos{
+    background-color: #D9D9D9;
+    color: #1775BD;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Productos a{
+    text-decoration-line: none;
+    color: #1775BD;
+    padding: 50px;
+}
+
+.header-logo:hover, .scale:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.main-EnvasadoAlVacio-queEs, .main-EnvasadoAlVacio-beneficios{
+    background-color: white;
+    color: #404040;
+}
+
+
+.servicios{
+    background-color: #A6A6A6;
+    padding: 0;
+}
+
+.servicios p, .servicios h3, .servicios h2{
+    color: white;
+    padding: 10px;
+    margin-left: 100px;
+}
+
+.footer-pieDePagina{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.footer-pieDePagina-contacto{
+    background-color: #D9D9D9;
+    color: #1775BD;
+}
+
+.footer-pieDePagina-contacto h4{
+    color: #1775BD;
+    font-size: 14px;
+}
+
+.footer-pieDePagina-ubicacion{
+    background-color: #D9D9D9;
+    background-size: 40%;
+    padding: 0px;
+}
+
+.footer-pieDePagina-ubicacion h3{
+    color: #404040;
+}
+
+.footer-pieDePagina-ubicacion h4{
+    color: #1775BD;
+    font-size: 14px;
+}
+
+.iconos{
+    display: flex;
+	flex-direction: row;
+    
+}
+
+#icono img{
+    width: 20%;
+}
+
+.prod-productos img, .prod-productos li{
+    width: 30%;
+    margin-left: 60px;
+}
+
+.prod-productos li{
+    color: #404040;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0px 50px;
+    padding: 5px 50px;
+}
+
+@media only screen and (min-width: 700px) {
+    header, main, footer, .carousel{
+        display: flex;
+/*        justify-content:space-between;*/
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    
+    .carousel-inner img{
+        width: 60%;
+        align-items: center;
+    }
+    
+    .navbar{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+
+    .main-envasado{
+        margin-left: 50px;
+        align-content: center;
+        height: 500px;
+
+    }
+    .main-EnvasadoAlVacio-queEs, .main-EnvasadoAlVacio-beneficios{
+        background-color: white;
+
+    }
+    
+    .footer-pieDePagina{
+    display: flex;
+    flex-direction: row;
+    }
+    
+    #productos img{
+        width: 60%;
+    }
+    
+    
+    .section-productos{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 600px 600px;
+        grid-template-rows: 400px 400px;
+        align-content: center;
+        margin: 0 auto;
+        padding: 50px 50px;
+    }
+    
+    .servicios-grid{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 600px 600px;
+        grid-template-rows: 400px 400px;
+        align-content: center;
+        margin-left: 100px;
+        padding: 0px;
+    }
+     
+    .servicios-grid li{
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    .iconos{
+        display: flex;
+        flex-direction: row;
+        margin: 0 10%;
+        padding: 0 10%;
+
+
+    }
+    
+    .prod-productos{
+    padding: 20px 50px;
+    width: 100%;
+    display:grid;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.trozadoras, .bombas, .sist, .cinta{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 30%;
+}
+
+    
+/*
+    .trozadoras, .bombas, .sist, .cinta{
+        width: 30%;
+        padding-left: 100px;
+    }
+*/
+    
+    section .Productos img{
+        width: 35%;
+    }
+    
+    .main-EnvasadoAlVacio {
+    max-width: 800px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 400px 400px;
+    align-content: center;
+    }
+    
+    .footer-pieDePagina{
+        display: grid;
+        max-height: 200px;
+        grid-gap: 1rem;
+        grid-template-columns: 600px 600px;
+        grid-template-rows: 5px 5px;
+        align-content: center;
+        margin: 0 auto;
+/*        padding: 15px 15px;*/
+    }
+    
+/*
+    .prod-grid{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 600px 600px;
+        grid-template-rows: 400px 400px;
+        align-content: center;
+*/
+
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+         "header header header header"
+         "main main main main"
+         "footer footer footer footer";
+        grid-template-columns: 400px 400ox;
+         }
+
+        header {
+           grid-area: header;
+        }
+
+        footer {
+           grid-area: footer;
+        }
+
+        main {
+           grid-area: main;     
+        }
+
+
+    
+
+
+
+
+

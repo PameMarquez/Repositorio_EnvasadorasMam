@@ -1,0 +1,134 @@
+$fondo-portada: #D9D9D9;
+$fondo-main: #404040;
+$tipo-light: #D9D9D9;
+$tipo-dark: #404040;
+$tipo-blue: #1775BD;
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+    font-size: 12px;
+    margin: 0px 30px;
+    padding: 10px 50px;
+        li{
+            padding: 20px 50px;
+            display: inline-block;
+            }
+    a{
+        text-decoration: none;
+    }
+    
+    
+}
+
+nav{
+	padding: 10px 40px 10px 40px;
+	display: flex;
+	flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+		}
+
+nav ul li a{
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+    /*Subrayado animado*/
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+			}
+
+a:hover, a:focus {
+    background-size: 100% 2px;
+			}
+
+header{
+    background-color: $fondo-portada;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    
+    h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        color: $tipo-dark;
+        letter-spacing: normal;
+        margin: 0px 50px;
+        padding: 20% 100px;
+    }
+}
+
+main{
+    background-color: $fondo-main;
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: normal;
+        margin: 0px 50px;
+        padding: 20px 50px;
+        font-size: 24px;
+        font-weight: bold;
+        color: $tipo-light;
+    }
+    
+    h3{
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: normal;
+        margin: 0px 50px;
+        padding: 20px 50px;
+        font-size: 24px;
+        font-weight: bold;
+        color: $tipo-light;
+    }
+    
+    p{
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: normal;
+        margin: 0px 50px;
+        padding: 20px 50px;
+        font-size: 18px;
+        color: $tipo-light;
+        
+    }
+    
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    background-color: $fondo-portada;
+    
+    h3{
+        color: $tipo-dark;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: normal;
+        margin: 0px 50px;
+        padding: 20px 50px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    h4{
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: normal;
+        margin: 0px 50px;
+        padding: 20px 50px;
+        color: $tipo-blue;
+        
+    }
+}
