@@ -35,6 +35,10 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
+        
+        <!--Animate.css-->
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     </head>
     <body>
         <div>
@@ -63,20 +67,25 @@
                       </ul>
                     </div>
                     </nav>
+                    <div class="portada wow">
+                        <img src="img/portada-contacto.jpg" alt="portada-contacto">
+                        <h1 class="contacto">CONTACTATE CON NOSOTROS</h1>
+                    </div>
+            </header>
+            <main>
                 <div>
                     <section>
-                        <h1 class="contacto">CONTACTATE CON NOSOTROS</h1>
                         <article>
 <!-- inicio bootstrap-->
                             <form class="row g-3">
-                                <div class="row">
                                   <div class="col">
+                                    <label for="inputName" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
                                   </div>
                                   <div class="col">
+                                    <label for="inputLastName" class="form-label">Apellido</label>
                                     <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
                                   </div>
-                                </div>
                               <div class="col-6">
                                 <label for="inputEmail4" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="inputEmail4" placeholder="direccion@correo.com">
@@ -85,11 +94,7 @@
                                 <label for="inputAddress" class="form-label">Direccion</label>
                                 <input type="text" class="form-control" id="inputAddress" placeholder="Direccion">
                               </div>
-                              <div class="col-md-6">
-                                <label for="inputCity" class="form-label">Ciudad</label>
-                                <input type="text" class="form-control" id="inputCity">
-                              </div>
-                              <div class="col-md-4">
+                            <div class="col-md-4">
                                 <label for="inputState" class="form-label">Provincia</label>
                                 <select id="inputState" class="form-select">
                                   <option selected>Elige tu provincia</option>
@@ -120,6 +125,14 @@
                                     <option value="Tucumán">Tucumán</option>
                                 </select>
                               </div>
+                              <div class="col-md-6">
+                                <label for="inputCity" class="form-label">Ciudad</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                                <div class="col-md-6">
+                                    <label for="inputText" class="form-label">Consulta</label>
+                                    <textarea name="textarea" rows="10" cols="50"></textarea>
+                                </div>
                               <div class="col-12">
                                 <button type="submit" class="btn btn-primary">Enviar</button>
                               </div>
@@ -129,97 +142,31 @@
                         </article>
                     </section>
                 </div>
-            </header>
-<!--
-            <main>
-                <div>
-                    <section>
-                        <article>
-
-                            <form class="row g-3">
-                                <div class="row">
-                                  <div class="col">
-                                    <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
-                                  </div>
-                                  <div class="col">
-                                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-                                  </div>
-                                </div>
-                              <div class="col-6">
-                                <label for="inputEmail4" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="inputEmail4" placeholder="direccion@correo.com">
-                              </div>
-                              <div class="col-6">
-                                <label for="inputAddress" class="form-label">Direccion</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="Direccion">
-                              </div>
-                              <div class="col-md-6">
-                                <label for="inputCity" class="form-label">Ciudad</label>
-                                <input type="text" class="form-control" id="inputCity">
-                              </div>
-                              <div class="col-md-4">
-                                <label for="inputState" class="form-label">Provincia</label>
-                                <select id="inputState" class="form-select">
-                                  <option selected>Elige tu provincia</option>
-                                  <option value="Buenos Aires">Buenos Aires</option>
-                                    <option value="Capital Federal">Capital Federal</option>
-                                    <option value="Catamarca">Catamarca</option>
-                                    <option value="Chaco">Chaco</option>
-                                    <option value="Chubut">Chubut</option>
-                                    <option value="Corrientes">Corrientes</option>
-                                    <option value="Cordoba">Cordoba</option>
-                                    <option value="Entre Rios">Entre Rios</option>
-                                    <option value="Formosa">Formosa</option>
-                                    <option value="Jujuy">Jujuy</option>
-                                    <option value="cordoba">Cordoba</option>
-                                    <option value="santa fe">Santa Fe</option>
-                                    <option value="entre rios">Entre Rios</option>
-                                    <option value="mendoza">Mendoza</option>
-                                    <option value="Misiones">Misiones</option>
-                                    <option value="Neuquén">Neuquén</option>
-                                    <option value="Rio Negro">Rio Negro</option>
-                                    <option value="Salta">Salta</option>
-                                    <option value="San Juan">San Juan</option>
-                                    <option value="San Luis">San Luis</option>
-                                    <option value="Santa Cruz">Santa Cruz</option>
-                                    <option value="Santa Fe">Santa Fe</option>
-                                    <option value="Santiago Del Estero">Santiago Del Estero</option>
-                                    <option value="Tierra Del Fuego">Tierra Del Fuego</option>
-                                    <option value="Tucumán">Tucumán</option>
-                                </select>
-                              </div>
-                              <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Enviar</button>
-                              </div>
-                            </form>
-
-
-                        </article>
-                    </section>
-                </div>
             </main>
--->
         </div>  
         <footer class="footer">
             <section class="footer-pieDePagina">
                 <article class="footer-pieDePagina-contacto">
                     <h3>CONTACTATE CON NOSOTROS</h3>
-                    <h4>Si quieres realizar una consulta, escribinos<br>a info@envasadorasmam.com.ar</h4>
+                    <h4>Si quieres realizar una consulta, escribinos<br>a info@envasadorasmam.com.ar o llamanos al 3564-413496/65</h4>
                     <ul class="iconos" >
-                        <li class="scale iconos-redes" id="icono"><a href="#"><img src="img/facebook.png"></a></li>
-                        <li class="scale iconos-redes" id="icono"><a href="#"><img src="img/instagram.png"></a></li>
-                        <li class="scale iconos-redes" id="icono"><a href="#"><img src="img/whatsapp.png"></a></li>
+                        <li class="scale iconos-redes" id="icono"><a href="error404.html"><img src="img/facebook.png"></a></li>
+                        <li class="scale iconos-redes" id="icono"><a href="error404.html"><img src="img/instagram.png"></a></li>
+                        <li class="scale iconos-redes" id="icono"><a href="https://api.whatsapp.com/send?phone=5493564413496&text=Hola!%20Quiero%20enviarle%20una%20consulta"><img src="img/whatsapp.png"></a></li>
                     </ul>
                 </article>
                 <article class="footer-pieDePagina-ubicacion">
                     <h3>¿SABÉS DONDE ESTAMOS?</h3>
-                    <h4>Juan XXIII 2214<br>San Francisco, Cordoba</h4>
+                    <h4>Juan XXIII 2214 - San Francisco, Cordoba</h4>
                     <h4><a href="https://www.google.com/maps/dir//envasadoras+mam/@-31.415333,-62.0897484,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95cb28303b5db21b:0xfcf82a4962bb303c!2m2!1d-62.0877213!2d-31.4145419"><strong>Google Maps</strong></a></h4>
                 </article>
             </section>
             <div class="DerReservados">
-                <h5>Derechos reservados. Diseñadora Pamela Marquéz</h5>
+                <h5>Derechos reservados. Diseñado por Pamela Marquéz</h5>
             </div>
         </footer>
+        
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init();</script>
     </body>
 </html>
