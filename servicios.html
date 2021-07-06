@@ -41,14 +41,14 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
 
+        <!--Animate.css-->
         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     </head>
     <body>
         <div class="contenedor">
-            <header class="header">
-                <div class="carousel">
-                <div id="demo" class="carousel slide" data-ride="carousel">
-                <nav class="navbar navbar-expand-md">
+            <header>
+                <nav class="navbar navbar-expand-lg nav-servicios">
                     <button class="navbar-toggler navbar-expand-md" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -72,43 +72,52 @@
                       </ul>
                     </div>
                     </nav>
-                <div class="carousel">
+                <div class="portada">
+                    <img src="img/portada-servicios.jpg" alt="portada-servicios">
                     <h1>NUESTROS<br>SERVICIOS</h1>
                 </div>
             </header>
             <main>
-                <article class="servicios">
+                <article class="servicios wow">
                     <h2>¿QUE SERVICIOS OFRECEMOS?</h2>
-                    <ul class="servicios-grid">
-                        <li>
+                    <ul class="servicios-grid wow">
+                        <li class="izquierda wow">
+                            <img src="img/servicios/asesoramiento.svg" alt="asesoramiento">
                             <h3>ASESORAMIENTO</h3>
                             <p>Contamos con una extensa trayectoria en el mercado, lo que nos permite brindar conocimientos y sugerencias de las opciones que mejor se adaptan a sus requerimientos.</p>
                         </li>
-                        <li>
+                        <li class="derecha wow">
+                            <img src="img/servicios/instalacion.svg" alt="instalacion">
                             <h3>INSTALACIÓN</h3>
                             <p>Contamos con la capacidad, conocimiento y entrenamiento para realizar el montaje, instalación y puesta en funcionamiento de todos los equipos que comercializamos.</p>
                         </li>
-                        <li>
+                        <li class="izquierda wow">
+                            <img src="img/servicios/atenci%C3%B3n.svg" alt="atención post venta">
                             <h3>ATENCIÓN POST VENTA</h3>
                             <p>Nuestros productos cuentan con garantías que nos permiten brindarle seguridad y confiabilidad en el funcionamiento de cada uno de los equipos.</p>
                         </li>
-                        <li>
+                        <li class="derecha wow">
+                            <img src="img/servicios/capacitacion.svg" alt="capacitacion">
                             <h3>CAPACITACIÓN</h3>
                             <p>Transferimos el know how necesario para brindar apoyo al personal que opera los equipos, otorgando pautas de funcionamiento y mantenimiento básico que permitan una utilización segura y adecuada.</p>
                         </li>
-                        <li>
+                        <li class="izquierda wow">
+                            <img src="img/servicios/control.svg" alt="control y diagnostico">
                             <h3>CONTROL Y DIAGNOSTICO</h3>
                             <p>Ofrecemos la posibilidad de realizar diagnósticos de los principales componentes del equipo y así facilitar una pauta del estado general del funcionamiento. Determinando repuestos a reemplazar y trabajos correctivos a realizar que logren el optimo desempeño de las máquinas.</p>
                         </li>
-                        <li>
+                        <li class="derecha wow">
+                            <img src="img/servicios/mantenimientopreven.svg" alt="mantenimiento preventivo">
                             <h3>MANTENIMIENTO PREVENTIVO</h3>
                             <p>El Mantenimiento Preventivo se basa en ejecutar revisiones y pruebas de funcionamiento que permitan detectar y eliminar los defectos que pudieran encontrarse, y así lograr el excelente desempeño de los equipos y sus componentes.</p>
                         </li>
-                        <li>
+                        <li class="izquierda wow">
+                            <img src="img/servicios/mantenimientocorrec.svg" alt="mantenimiento correctivo">
                             <h3>MANTENIMIENTO CORRECTIVO</h3>
                             <p>El Mantenimiento Correctivo se realiza a partir de la detección de una falla y su objetivo es normalizar las condiciones de funcionamiento del equipo. El resultado del diagnóstico considera las opciones posibles para la solución de dicha falla.</p>
                         </li>
-                        <li>
+                        <li class="derecha wow">
+                            <img src="img/servicios/restauraciones.svg" alt="restauraciones">
                             <h3>RESTAURACIONES</h3>
                             <p>Realizamos trabajos de restauración de equipos a nuevo de cualquier tipo y marca.</p>
                         </li>   
@@ -120,22 +129,25 @@
             <section class="footer-pieDePagina">
                 <article class="footer-pieDePagina-contacto">
                     <h3>CONTACTATE CON NOSOTROS</h3>
-                    <h4>Si quieres realizar una consulta, escribinos<br>a info@envasadorasmam.com.ar</h4>
+                    <h4>Si quieres realizar una consulta, escribinos<br>a info@envasadorasmam.com.ar o llamanos al 3564-413496/65</h4>
                     <ul class="iconos" >
-                        <li class="scale iconos-redes" id="icono"><a href="#"><img src="img/facebook.png"></a></li>
-                        <li class="scale iconos-redes" id="icono"><a href="#"><img src="img/instagram.png"></a></li>
-                        <li class="scale iconos-redes" id="icono"><a href="#"><img src="img/whatsapp.png"></a></li>
+                        <li class="scale iconos-redes" id="icono"><a href="error404.html"><img src="img/facebook.png"></a></li>
+                        <li class="scale iconos-redes" id="icono"><a href="error404.html"><img src="img/instagram.png"></a></li>
+                        <li class="scale iconos-redes" id="icono"><a href="https://api.whatsapp.com/send?phone=5493564413496&text=Hola!%20Quiero%20enviarle%20una%20consulta"><img src="img/whatsapp.png"></a></li>
                     </ul>
                 </article>
                 <article class="footer-pieDePagina-ubicacion">
                     <h3>¿SABÉS DONDE ESTAMOS?</h3>
-                    <h4>Juan XXIII 2214<br>San Francisco, Cordoba</h4>
+                    <h4>Juan XXIII 2214 - San Francisco, Cordoba</h4>
                     <h4><a href="https://www.google.com/maps/dir//envasadoras+mam/@-31.415333,-62.0897484,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95cb28303b5db21b:0xfcf82a4962bb303c!2m2!1d-62.0877213!2d-31.4145419"><strong>Google Maps</strong></a></h4>
                 </article>
             </section>
             <div class="DerReservados">
-                <h5>Derechos reservados. Diseñadora Pamela Marquéz</h5>
+                <h5>Derechos reservados. Diseñado por Pamela Marquéz</h5>
             </div>
         </footer>
+        
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init();</script>
     </body>
 </html>

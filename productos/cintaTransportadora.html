@@ -35,6 +35,11 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
+    
+        <!--Animate.css-->
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
     </head>
     <body>
         <div>
@@ -63,20 +68,27 @@
                       </ul>
                     </div>
                     </nav>
-                <h1>CINTA<br>TRANSPORTADORA</h1>
+                <div class="portada-productos">
+                    <img src="../img/Cinta.png" alt="cinta-transportadora">
+                    <h1 class="animate__bounceInRight wow">CINTA<br>TRANSPORTADORA</h1>
+                </div>
             </header>
         </div>
         <div>
             <section class="prod-productos">
                 <h3>CINTA TRANSPORTADORA PARA CODIFICADO</h3>
-                <img src="../img/trosadora.png" alt="cinta" class="cinta">
-                <div>
-                    <h4>CARACTERISTICAS:</h4>
-                    <ul>
-                        <li>Equipo que presenta una sólida construcción, de excelente diseño, que garantiza una larga y eficiente vida útil.</li>
-                        <li>Máquinas muy rápidas y de tecnología avanzada</li>
-                    </ul>
-                    <h5 class="boton"><a href="#">VER FICHA TECNICA</a></h5>
+                <div class="prod-grid-sistema">
+                    <article class="cinta">
+                        <img src="../img/cintaTransportadora.jpg" alt="cinta">
+                    </article>
+                    <article>
+                        <h4>CARACTERISTICAS:</h4>
+                        <ul>
+                            <li>Equipo que presenta una sólida construcción, de excelente diseño, que garantiza una larga y eficiente vida útil.</li>
+                            <li>Máquinas muy rápidas y de tecnología avanzada</li>
+                        </ul>
+                        <h5 class="boton"><a href="../error404.html">VER FICHA TECNICA</a></h5>
+                    </article>
                 </div>
             </section>
         </div>
@@ -84,22 +96,25 @@
             <section class="footer-pieDePagina">
                 <article class="footer-pieDePagina-contacto">
                     <h3>CONTACTATE CON NOSOTROS</h3>
-                    <h4>Si quieres realizar una consulta, escribinos<br>a info@envasadorasmam.com.ar</h4>
+                    <h4>Si quieres realizar una consulta, escribinos<br>a info@envasadorasmam.com.ar o llamanos al 3564-413496/65</h4>
                     <ul class="iconos" >
-                        <li class="scale iconos-redes" id="icono"><a href="#"><img src="../img/facebook.png"></a></li>
-                        <li class="scale iconos-redes" id="icono"><a href="#"><img src="../img/instagram.png"></a></li>
-                        <li class="scale iconos-redes" id="icono"><a href="#"><img src="../img/whatsapp.png"></a></li>
+                        <li class="scale iconos-redes" id="icono"><a href="../error404.html"><img src="../img/facebook.png"></a></li>
+                        <li class="scale iconos-redes" id="icono"><a href="../error404.html"><img src="../img/instagram.png"></a></li>
+                        <li class="scale iconos-redes" id="icono"><a href="https://api.whatsapp.com/send?phone=5493564413496&text=Hola!%20Quiero%20enviarle%20una%20consulta"><img src="../img/whatsapp.png"></a></li>
                     </ul>
                 </article>
                 <article class="footer-pieDePagina-ubicacion">
                     <h3>¿SABÉS DONDE ESTAMOS?</h3>
-                    <h4>Juan XXIII 2214<br>San Francisco, Cordoba</h4>
+                    <h4>Juan XXIII 2214 - San Francisco, Cordoba</h4>
                     <h4><a href="https://www.google.com/maps/dir//envasadoras+mam/@-31.415333,-62.0897484,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95cb28303b5db21b:0xfcf82a4962bb303c!2m2!1d-62.0877213!2d-31.4145419"><strong>Google Maps</strong></a></h4>
                 </article>
             </section>
             <div class="DerReservados">
-                <h5>Derechos reservados. Diseñadora Pamela Marquéz</h5>
+                <h5>Derechos reservados. Diseñado por Pamela Marquéz</h5>
             </div>
         </footer>
+    
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init();</script>
     </body>
 </html>

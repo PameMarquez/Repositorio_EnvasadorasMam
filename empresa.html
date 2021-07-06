@@ -35,11 +35,15 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
+        
+        <!--Animate.css-->
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     </head>
     <body>
         <div>
             <header class="home">
-                <nav class="navbar navbar-expand-md">
+                <nav class="navbar navbar-expand-lg">
                     <button class="navbar-toggler navbar-expand-md" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -63,14 +67,17 @@
                       </ul>
                     </div>
                     </nav>
-                <div class="portada">
+                <div class="portada wow">
+                    <img src="img/portada-empresa.jpg" alt="portada-empresa">
                     <h1>LA EMPRESA</h1>
                 </div>
             </header>
             <main>
-                <section>
-                    <aside>
+                <section class="empresa wow">
+                    <article>
                         <h2>QUIENES SOMOS</h2>
+                    </article>
+                    <aside id="empresa-descrip">
                         <p>Envasadoras MAM es una empresa dedicada a asesorar, proveer maquinaria y brindar servicio a la industria alimenticia y afines. Contando con una excelente atención al cliente pre y pos-venta, garantizando un servicio rápido y personalizado.</p>
                         <p>Nació como un emprendimiento familiar que, desde el año 1983, está instalado en la ciudad de San Francisco, provincia de Córdoba, Argentina.</p>
                         <p>Hoy cuenta con instalaciones propias y personal altamente capacitado para conjugar tecnología simple, moderna e innovadoras soluciones, ofreciendo costos competitivos.</p>
@@ -82,22 +89,25 @@
             <section class="footer-pieDePagina">
                 <article class="footer-pieDePagina-contacto">
                     <h3>CONTACTATE CON NOSOTROS</h3>
-                    <h4>Si quieres realizar una consulta, escribinos<br>a info@envasadorasmam.com.ar</h4>
+                    <h4>Si quieres realizar una consulta, escribinos<br>a info@envasadorasmam.com.ar o llamanos al 3564-413496/65</h4>
                     <ul class="iconos" >
-                        <li class="scale iconos-redes" id="icono"><a href="#"><img src="img/facebook.png"></a></li>
-                        <li class="scale iconos-redes" id="icono"><a href="#"><img src="img/instagram.png"></a></li>
-                        <li class="scale iconos-redes" id="icono"><a href="#"><img src="img/whatsapp.png"></a></li>
+                        <li class="scale iconos-redes" id="icono"><a href="error404.html"><img src="img/facebook.png"></a></li>
+                        <li class="scale iconos-redes" id="icono"><a href="error404.html"><img src="img/instagram.png"></a></li>
+                        <li class="scale iconos-redes" id="icono"><a href="https://api.whatsapp.com/send?phone=5493564413496&text=Hola!%20Quiero%20enviarle%20una%20consulta"><img src="img/whatsapp.png"></a></li>
                     </ul>
                 </article>
                 <article class="footer-pieDePagina-ubicacion">
                     <h3>¿SABÉS DONDE ESTAMOS?</h3>
-                    <h4>Juan XXIII 2214<br>San Francisco, Cordoba</h4>
+                    <h4>Juan XXIII 2214 - San Francisco, Cordoba</h4>
                     <h4><a href="https://www.google.com/maps/dir//envasadoras+mam/@-31.415333,-62.0897484,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95cb28303b5db21b:0xfcf82a4962bb303c!2m2!1d-62.0877213!2d-31.4145419"><strong>Google Maps</strong></a></h4>
                 </article>
             </section>
             <div class="DerReservados">
-                <h5>Derechos reservados. Diseñadora Pamela Marquéz</h5>
+                <h5>Derechos reservados. Diseñado por Pamela Marquéz</h5>
             </div>
         </footer>
+        
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init();</script>
     </body>
 </html>
