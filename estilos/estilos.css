@@ -4,16 +4,16 @@
 }
 
 
-.container {
+/*.container {
     display: grid;
     grid-template-areas:
      "header header header"
      "main main main"
      "footer footer footer";
     grid-template-columns: 100px auto 100px;
-}
+}*/
 
-header {
+/*header {
    grid-area: header;
 }
 
@@ -23,7 +23,7 @@ footer {
 
 main {
    grid-area: main;     
-}
+}*/
 
 body{
     background-color: #D9D9D9;
@@ -100,6 +100,7 @@ nav, .navbar{
     font-size: 12px;
     background-color: #404040;
     z-index: 3;
+    width: 100%;
 }
 
 	nav ul li{
@@ -127,12 +128,13 @@ nav, .navbar{
 			}
 
 .navbar-toggler{
-    background-color: white;
     border: #D9D9D9;
+    border-style: solid;
     margin-left: 0%;
     width: 20%;
     
 }
+
 
 /*cierra nav */
 
@@ -221,9 +223,10 @@ section .Productos img{
     font-size: 10px;
     margin: 0px 10px;
     padding: 0px 10px;
+    font-weight: bold
 }
 
-.portada{
+.portada, .EnvasadoAlVacio{
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -240,18 +243,18 @@ section .Productos img{
     height: 60vh;
 }
 
-.portada h1{
+.portada h1, .EnvasadoAlVacio{
     align-content: center;
-     margin-top: 100px;
+     
 }
 
-.portada h1, .portada h3, .main-EnvasadoAlVacio, .portada h2{
+.portada h1, .portada h3, .main-EnvasadoAlVacio, .portada h2, .EnvasadoAlVacio h3{
     position: relative;
     z-index: 5;
     align-items: center;
 }
 
-.portada img{
+.portada img, .EnvasadoAlVacio img{
     position: absolute;
     left: 0;
     top: 0;
@@ -510,207 +513,525 @@ section .Productos img{
     align-content: center;
 }
 
-@media only screen and (min-width: 700px) {
+@media screen and (max-width:699px){
     
-    p{
-    color: #404040;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    margin: 0px 50px;
-    padding: 20px 50px;
-    }
-
     h1{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 50px;
-        color: #404040;
-        letter-spacing: normal;
-        margin: 0px 50px;
-        padding: 20% 100px;
+        font-size: 35px;
 
-    }
-
-    h4, h5{
-        font-family: 'Montserrat', sans-serif;;
-        letter-spacing: normal;
-        margin: 0px 50px;
-        padding: 10px 50px;
     }
 
     h2, h3{
-        font-family: 'Montserrat', sans-serif;
-        letter-spacing: normal;
-        margin: 20px 50px;
-        padding: 20px 10px;
+
+        font-size: 28px;
+    }
+
+    h4{
         font-size: 30px;
-        font-weight: bold;
+    }
+
+    h5{
+        font-size: 20px;
+    }
+    
+
+    .header-logo{
+        width: 60%;
+    }
+    
+    .portada{
+        height: 100%
+    }
+    
+     .portada img{
+        width: 100%;
+      
+    }
+    
+    .portada-productos{
+        margin: 10px;
+    }
+    
+    .EnvasadoAlVacio{
+        height: 200%;
+        margin: 0;
+        padding: 0;
+        width: 100%
+    }
+    
+    .EnvasadoAlVacio img{
+        height: 100%;
+    }
+    
+    .main-EnvasadoAlVacio h3{
+    font-size: 24px;
+    }
+    
+    .main-EnvasadoAlVacio h4{
+    font-size: 18px;
+    }
+    
+    .main-EnvasadoAlVacio p, .main-EnvasadoAlVacio li{
+    font-size: 14px;
+    }
+    
+    
+    .Productos p{
+        font-size: 18px;
+        text-align: justify
+    }
+    
+    #productos img{
+        width: 60%;
+    }
+    
+     .Servicios img {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .Servicios h3{
+        text-align: center;
+    }
+    
+    .Servicios p, .Servicios h5{
+        font-size: 18px;
+        text-align: center;
+    }
+    
+     .boton a{
+        font-size: 14px;
+         text-align-last: center;
+    }
+    
+    .footer-pieDePagina{
+        text-align: center;
+        height: 23vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    .footer-pieDePagina h3{
+        font-size: 26px;
+    }
+
+    .footer-pieDePagina-contacto h4, .footer-pieDePagina-ubicacion h4{
+        font-size: 10px;
+    }
+    
+    #icono{
+        width: 30%;
+    }
+    
+     .empresa{
+        text-align: center;
+         width: 100%;
+    }
+
+    .empresa h2{
+        text-align: center;
+    }
+
+    #empresa-descrip{
+        border-bottom: 1px;
+        border-bottom-style: solid;
+        border-color: #404040; 
+    }
+    
+    #empresa-descrip p{
         color: #404040;
+        height: 10%;
+        font-size: 18px;
+        margin:0
+    }
+    
+
+    .prod-productos li, .prod-grid-sistema li, .prod-productos p{
+        font-size: 18px;
+        text-align: justify;
+    }
+    
+    .EnvVacio img{
+        width: 60%;
+    }
+
+    .servicios{
+        text-align: center;
+        margin: 0;
+        
+    }
+    
+    .servicios p{
+        font-size: 16px;
+    }
+
+    .servicios img{
+        width: 30%;
+    }
+
+}
+
+@media screen and (min-width: 700px){
+    
+    h1{
+        font-size: 50px;
+
+    }
+
+    h2, h3{
+
+        font-size: 40px;
+    }
+
+    h4{
+        font-size: 30px;
+    }
+
+    h5{
+        font-size: 22px;
+    }
+
+    .header-logo{
+        width: 80%;
+    }
+    
+    .portada{
+        height: 90vh
+    }
+    
+     .portada img{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .main-EnvasadoAlVacio h4{
+    font-size: 26px;
+    }
+    
+    .main-EnvasadoAlVacio li{
+        margin: 0;
+    }
+    
+    .main-EnvasadoAlVacio p, .main-EnvasadoAlVacio li{
+    font-size: 16px;
+    width: 100%;
+    }
+    
+    .EnvasadoAlVacio{
+        height: 200%;
+        margin: 0;
+        padding: 0;
+        width: 100%
+    }
+    
+    .EnvasadoAlVacio img{
+        height: 100%;
+    }
+    
+    .Productos p{
+        font-size: 20px;
+    }
+    
+     .Servicios img {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .Servicios h3{
+        text-align: center;
+    }
+    .Servicios p, .Servicios h5{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+     .boton a{
+        font-size: 14px;
+         text-align-last: center;
+    }
+    
+    .footer-pieDePagina{
+        text-align: center;
+        height: 18vh;
+    
+    }
+    
+    .footer-pieDePagina h3{
+        font-size: 26px;
+    }
+
+    .footer-pieDePagina-contacto h4, .footer-pieDePagina-ubicacion h4{
+        font-size: 10px;
+    }
+    
+    #icono{
+        width: 20%;
+    }
+    
+     .empresa{
+        text-align: center;
+    }
+
+    .empresa h2{
+        text-align: center;
+    }
+
+    #empresa-descrip{
+        border-bottom: 1px;
+        border-bottom-style: solid;
+        border-color: #404040; 
+    }
+    
+    #empresa-descrip p{
+        color: #404040;
+        height: 10%;
+        font-size: 18px;
+    }
+    
+
+    .prod-productos li, .prod-grid-sistema li, .prod-productos p{
+        font-size: 18px;
+    }
+    
+    .EnvVacio img{
+        width: 60%;
+    }
+
+    .servicios{
+        text-align: center;
+        
+    }
+    
+    .servicios p{
+        font-size: 20px;
+    }
+
+    .servicios img{
+        width: 30%;
+    }
+
+}
+
+@media only screen and (min-width: 999px){
+    
+    nav ul li{
+			list-style: none;
+			display: inline-block;
+            padding: 0% 10%;
+            justify-content: flex-end;
+            width: 100%;
+    }
+    
+    h1{
+        font-size: 50px;
+        text-align: center;
+
+    }
+
+    h2, h3{
+
+        font-size: 40px;
+    }
+
+    h4{
+        font-size: 30px;
+    }
+
+    h5{
+        font-size: 22px;
+    }
+
+    .header-logo{
+        width: 60%;
+    }
+    
+    .portada{
+        height: 90vh;
+        margin: 0
+    }
+    
+     .portada img{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .main-EnvasadoAlVacio h4{
+    font-size: 26px;
+    }
+    
+    .main-EnvasadoAlVacio p, .main-EnvasadoAlVacio li{
+    font-size: 20px;
+    width: 100%;
+    }
+    
+    .EnvasadoAlVacio img{
+        height: 100%;
+        margin: 0
+    }
+    
+    .Productos p{
+        font-size: 20px;
+    }
+    
+     .Servicios img {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .Servicios h3{
+        text-align: center;
+    }
+    .Servicios p, .Servicios h5{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+     .boton a{
+        font-size: 14px;
+         text-align-last: center;
+    }
+    
+    .footer-pieDePagina{
+        text-align: center;
+        height: 18vh;
+    
+    }
+    
+    .footer-pieDePagina h3{
+        font-size: 26px;
+    }
+
+    .footer-pieDePagina-contacto h4, .footer-pieDePagina-ubicacion h4{
+        font-size: 10px;
+    }
+    
+    #icono{
+        width: 20%;
+    }
+    
+     .empresa{
+        text-align: center;
+    }
+
+    .empresa h2{
+        text-align: center;
+    }
+
+    #empresa-descrip{
+        border-bottom: 1px;
+        border-bottom-style: solid;
+        border-color: #404040; 
+    }
+    
+    #empresa-descrip p{
+        color: #404040;
+        height: 10%;
+        font-size: 18px;
+    }
+    
+
+    .prod-productos li, .prod-grid-sistema li, .prod-productos p{
+        font-size: 18px;
+    }
+    
+    .EnvVacio img{
+        width: 60%;
+    }
+
+    .servicios{
+        text-align: center;
+        
+    }
+    
+    .servicios p{
+        font-size: 20px;
+    }
+
+    .servicios img{
+        width: 30%;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1100px){
+    
+    p{
+    font-size: 20px;
+
+    }
+
+    h1{
+        font-size: 50px;
+
+    }
+
+    h2, h3{
+
+        font-size: 30px;
     }
 
     h4{
         font-size: 20px;
-        font-weight: bold;
     }
 
     h5{
         font-size: 16px;
-        text-decoration: none;
-        border-radius: 2px;
-        border-color: dodgerblue;
-        color: black;
     }
     
     .li-beneficios li{
         font-size: 10px;
     }
-    
-    .navbar{
-        position: fixed;
-        top: 0;
-        width: 100%;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: #404040;
-        height: 60px;
-    }
+
 
     .header-logo{
-        margin-left: 10px;
-        width: 50%;
+        width: 60%;
 
     }
-
-    .header-logo, ul{
-        display: inline;
-    }
-
-    .li-beneficios li{
-        color: #404040;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 10px;
-        margin: 0px 10px;
-        padding: 0px 10px;
-        font-weight: bold;
-    }
-
-    .portada{
+    
+    .fondo{
+        height: 100vh;
         width: 100%;
-        position: relative;
-        overflow: hidden;
-        padding: 20px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        z-index: 2;
-
-    }
-
-    .fondo, .fondo h1{
-        background-color: #2C5370;
-        color: white;
-        height: 100vh;
-    }
-
-    .portada h1{
-        align-content: center;
-    }
-
-    .portada h1, .portada h3, .main-EnvasadoAlVacio, .portada h2{
-        position: relative;
-        z-index: 5;
-        align-items: center;
     }
 
     .portada img{
-        position: absolute;
-        left: 0;
-        top: 0;
         width: 100%;
-        opacity: 0.6;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 
+    .portada{
+        height: 90vh;
+    }
+    
     .portada-productos{
         display: flex;
         flex-direction: row;
         align-content: center;
-        margin-left: 10%;
+        align-items: center;
+        justify-content: center;
         height: 100vh;
-    }
+        }
 
     .portada-productos img{
         width: 50%;
         height: 50%;
-
-        margin-top: 150px;
-        margin-left: 20px;
-
     }
 
+     .Productos p{
+        font-size: 16px;
+        width: 60%;
+    }
+    
     #productos img{
         margin: 0px 60px;
         align-items: center;
-        width: 100%;
-    }
-
-    .Servicios {
-        position: relative;
-        overflow: hidden;
-         background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-
-    .Servicios h3, .Servicios p, .Servicios h5 {
-        position: relative;
-        z-index: 2;
     }
 
     .Servicios img {
-        position: absolute;
-        left: 0;
-        top: 0;
         width: 100%;
-        opacity: 0.6;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 500px;
+        height: 100vh;
     }
-
-    .boton a{
-        text-decoration: none;
-        font-size: 12px;
-        background-color: #D9D9D9;
-        border-color: #1775BD;
-        color: #404040;
-        padding: 5px 5px;
-        border-style: solid;
-    }
-
-    .Productos{
-        background-color: #D9D9D9;
-        color: #1775BD;
-        display: flex;
-        flex-direction: column;
-        text-align: justify;
-        padding: 0px 0px;
-        margin: 0px;
-        width: 100%;
-    }
-
-
-    .Productos a{
-        text-decoration-line: none;
-        color: #1775BD;
-        padding: 10px;
-    }
-
-    .Productos p{
-        font-size: 16px;
-    }
-
 
     .servicios{
         background-color: #D9D9D9;
@@ -721,15 +1042,8 @@ section .Productos img{
     .servicios img{
         width: 40%;
     }
-    
-    .Servicios h3{
-        color: #404040;
-        padding: 20px 100px;
-        margin-bottom: 0;
-    }
 
     .Servicios p, .Servicios h5{
-        color: black;
         font-size: 16px;
     }
 
@@ -744,38 +1058,16 @@ section .Productos img{
     }
     
     .footer-pieDePagina h3{
-        padding: 0 10px;
-        line-height: 1.5;
+        font-size: 26px;
     }
 
     .footer-pieDePagina-contacto h4, .footer-pieDePagina-ubicacion h4{
-        color: #1775BD;
-        font-size: 14px;
-    }
-
-    .footer-pieDePagina-ubicacion h3{
-        color: #404040;
-    }
-
-    .iconos{
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    #icono img{
-        width: 20%;
-    }
-
-    .prod-productos, .sistTermo{
-        margin: 15px;
-        padding: 5px;
+        font-size: 12px;
     }
 
     .prod-productos img {
         width: 20%;
         margin: 0px 40px;
-        padding: 0px 40px;
     }
 
     .sistTermo img {
@@ -785,30 +1077,14 @@ section .Productos img{
     }
 
     .prod-productos h3, .sistTermo h3{
-        margin: 10px 40px;
-        padding: 1px 40px;
+        /*margin: 10px 40px;
+        padding: 1px 40px;*/
     }
 
     .prod-productos li, .prod-grid-sistema li{
-        color: #404040;
-        font-family: 'Open Sans', sans-serif;
         font-size: 16px;
-        font-weight: bold;
         margin: 0px 40px;
-        padding: 0px 40px;
-    }
-
-
-    .DerReservados{
-        background-color: #404040;
-        position: relative;
-        bottom: -170px;
-        height: 40px;
-    }
-
-    .DerReservados h5{
-        color: #D9D9D9;
-        font-size: 8px;
+        padding: 0px 40px;*/
     }
 
     .servicios-grid img{
@@ -837,13 +1113,6 @@ section .Productos img{
         height: 100px;
         align-content: center;
     }
-
-    .main-envasado{
-    display: flex;
-    flex-direction: column;
-    justify-items: normal;
-    }
-
     
     .main-EnvasadoAlVacio h4{
     font-size: 22px;
@@ -859,27 +1128,28 @@ section .Productos img{
     }
     
     .boton a{
-        font-size: 14px;
+        font-size: 16px;
     }
-
     
     .section-productos{
         display: grid;
+        width: 100%;
         grid-gap: 1rem;
         grid-template-columns: 600px 600px;
         grid-template-rows: 500px 500px;
         align-content: center;
-        margin: 0 auto;
-        padding: 50px 50px;
+        justify-content: center;
+        justify-items: center;
     }
     
     .Servicios-grid{
         display: grid;
         grid-gap: 1rem;
         grid-template-columns: 500px 500px;
-        grid-template-rows: 200px 200px;
-        align-items: center;
-        padding: 10px 100px; 
+        grid-template-rows: 100px 100px;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
     }
     
     .servicios-grid{
@@ -888,7 +1158,6 @@ section .Productos img{
         grid-template-columns: 600px 600px;
         grid-template-rows: 500px 500px;
         align-content: center;
-        margin: 30px;
     }
 
     .iconos{
@@ -898,36 +1167,38 @@ section .Productos img{
         padding: 0 10%;
     }
     
-    section .Productos img{
-        width: 35%;
-    }
-    
     .main-EnvasadoAlVacio {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: 600px 600px;
+    grid-template-columns: 550px 550px;
     grid-template-rows: 350px 350px;
     align-content: center;
-    margin: 0 auto;
-    padding-left: 50px;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .EnvVacio p{
+        font-size: 16px;
+        width: 80%; 
     }
     
     .prod-grid{
-    max-width: 900px;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 600px 600px;
-    grid-template-rows: 350px 350px;
+    grid-template-rows: 400px 400px;
+    align-content: center;
     align-items: center;
+    justify-content: center;
     }
     
     .prod-grid-pequeña{
-    max-width: 500px;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 600px 600px;
-    grid-template-rows: 205px 205px;
+    grid-template-rows: 250px 250px;
     align-content: center;
+    justify-content: center;
     }
     
     .prod-grid img, .prod-grid-pequeña img, .prod-grid-sistema img{
@@ -939,21 +1210,21 @@ section .Productos img{
     }
     
     .prod-grid-tresbottom{
-    max-width: 500px;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 135px 135px 135px;
+    grid-template-rows: 180px 180px 180px;
     align-content: center;
+    justify-content: center;
     }
     
     .prod-grid-tres{
-    max-width: 500px;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 110px 110px 110px;
+    grid-template-rows: 130px 130px 130px;
     align-content: center;
+    justify-content: center;
     }
     
     .prod-grid-tres img, .prod-grid-tresbottom img{
@@ -984,11 +1255,12 @@ section .Productos img{
     
     .footer-pieDePagina{
         display: grid;
-    
         max-height: 40px;
         grid-gap: 1rem;
         grid-template-columns: 600px 600px;
         grid-template-rows: 10px 10px;
+        align-content: center;
+        justify-content: center;
     }
 
 
